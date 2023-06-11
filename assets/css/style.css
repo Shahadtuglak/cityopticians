@@ -1,5 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    height: 80px !important;
+    width: 80px !important;
+
+}
+
+/* 
+.nav-link-container {
+    margin-left: 100px;
+} */
+
+.nav-link {
+    margin: 20px !important;
+    font-size: large !important;
+}
+
+.showcase_container {
+    background-image: url("../img/showcase.jpg");
+    height: 86vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(80%);
+}
+
+
+/* Contact Section */
+.contactus {
+    padding: 10px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+}
+
+.social-icon {
+    height: 50px;
+    width: 50px;
+    margin: 2rem;
+}
+
+
+footer {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 8rem;
+}
+
+footer a {
+    text-decoration: none !important;
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+/* PC SCREEN */
+@media screen and (min-width: 1024px) {
+    .contactus .container {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2rem;
+    }
+
+    iframe {
+        height: 350px;
+        width: 450px;
+    }
+
+    .contactinfo {
+        width: 45%;
+        /* padding-top: 1rem; */
+    }
+
+
+
+    #about {
+        height: 30vh;
+        text-align: center;
+        margin: 1rem 4rem 4rem 4rem;
+        padding: 10px;
+    }
+
+}
+
+/* Tablet Screen */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .contactus .container {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2rem;
+    }
+
+    iframe {
+        height: 400px;
+        width: 400px;
+        margin-right: 1rem;
+    }
+
+    .contactinfo {
+        width: 45%;
+        padding-top: 1rem;
+    }
+
+    #about {
+        height: 40vh;
+        text-align: center;
+
+        margin: 2rem 4rem 6rem 4rem;
+    }
+
+
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 768px) {
+    .contactus .container {
+        padding-top: 2rem;
+    }
+
+    .map,
+    iframe {
+        height: 500px !important;
+        width: 100%;
+    }
+
+    .contactinfo {
+        padding-top: 1rem;
+    }
+
+    #about {
+        height: 60vh;
+        margin: 10px 10px 50px 10px;
+        text-align: center;
+    }
+
 }
