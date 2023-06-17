@@ -110,6 +110,10 @@ footer a {
         margin-right: 1rem;
     }
 
+    #contact {
+        margin-top: 2rem;
+    }
+
     .contactinfo {
         width: 45%;
         padding-top: 1rem;
@@ -127,6 +131,10 @@ footer a {
 
 /* Mobile Screen */
 @media screen and (max-width: 768px) {
+    #contact {
+        margin-top: 6rem;
+    }
+
     .contactus .container {
         padding-top: 2rem;
     }
